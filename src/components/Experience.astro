@@ -1,0 +1,47 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+
+const EXPERIENCE = [
+    {
+        date: 'Octubre 2024–Actualidad',
+        title: 'MAGTEL | Desarrollador web junior',
+        description: `Proyecto “Acuafasa”
+        ● Instalar y configurar servidor Ubuntu sin interfaz gráfica, replicando un entorno VPS.
+● Acceder y administrar el servidor de forma remota utilizando SSH (Putty) para la configuración y mantenimiento del sistema.
+● Instalar y desplegar un LMS Moodle junto con todas las dependencias necesarias (PHP, MySQL, etc.) para crear un curso en línea.
+Proyecto “Livre sin Límites”
+● Implementar funcionalidades en una plataforma web utilizando React junto con Vite como empaquetador para crear interfaces rápidas y eficientes.
+● Desarrollar nuevas funcionalidades y mantener el backend de la aplicación trabajando con una API desarrollada en Flask.
+● Manipular datos almacenados en una base de datos PostgreSQL.
+● Gestionar la infraestructura de producción del proyecto que es serverless y está alojado en AWS.
+● Manejar servicios como Amplify para alojar el frontend, Lambda para el backend y Amazon RDS para la base de datos.
+● Desarrollar localmente utilizando VSCode y Docker para asegurar la consistencia en los entornos y simplificar los procesos.
+● Manejar control de versiones GitLab y GitHub, asegurando una gestión eficiente y colaborativa del código.`,
+        link: '',
+    },
+    {
+        date: '',
+        title: '',
+        description: '',
+        link: '',
+    },
+    {
+        date: '',
+        title: '',
+        description: '',
+        link: '',
+    },
+]
+---
+
+
+<ol class="relative border-s border-gray-200 dark:border-gray-700">
+    {
+        EXPERIENCE.map(experience => (
+            <li class="mb-10 ms-4">
+                <ExperienceItem { ... experience} />
+            </li>
+        ))
+    }                  
+</ol>
+

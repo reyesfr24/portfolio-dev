@@ -2,20 +2,26 @@
 import Layout from '../layouts/Layout.astro';
 import Badge from '../components/Badge.astro';
 import Social from '../components/Social.astro'
+import Experience from '../components/Experience.astro'
+import SectionContainer from '../components/SectionContainer.astro'
 import LinkedIn from '../icons/LinkedIn.astro'
 import GitHub from '../icons/GitHub.astro'
-import SplitText from '../components/SplitText.jsx';
+import Mail from '../icons/Mail.astro'
+// import SplitText from '../components/SplitText.jsx';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout 
+	title="Portfolio Francisco Reyes Luna | Programador web"
+	description="Desarrollador web apasionado por el desarrollo y la tecnología"
+>
 	<main>
-		<section class="w-full mx-auto lg:w-[740px] py-10">
+		<SectionContainer>
 			<img
-				class="rounded-full w-12 h-12 mb-4"
+				class="rounded-full size-12 mb-4"
 				src="../../public/profile.jpg"
 				alt="profile photo"
 			/>
-			<!-- <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
 				¡Hola, soy Fran! <a 
 					href="https://www.linkedin.com/in/francisco-reyes-11a887172/"
 					target="_blank"
@@ -24,8 +30,8 @@ import SplitText from '../components/SplitText.jsx';
 				>
 					<Badge>Disponible para trabajar</Badge>
 				</a>
-			</h1> -->
-			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
+			</h1>
+			<!-- <h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-10">
 				<SplitText
 					text="¡Hola, soy Francisco!"
 					className="text-5xl font-bold text-white leading-[1.2]"
@@ -45,7 +51,7 @@ import SplitText from '../components/SplitText.jsx';
 				>
 					<Badge>Disponible para trabajar</Badge>
 				</a>
-			</h1>
+			</h1> -->
 			<h2 class="text-2xl text-wrap">
 				<span class="text-yellow-200/90 ">Programador web</span>
 				<span class="opacity-80"> apasionado por el desarrollo y la tecnología. Disfruto
@@ -59,15 +65,23 @@ import SplitText from '../components/SplitText.jsx';
 
 			<nav class="flex gap-x-4 mt-8">
 				<Social href="https://www.linkedin.com/in/francisco-reyes-11a887172/">
-					<LinkedIn class="w-6 h-6" />
+					<LinkedIn class="size-6" />
 					LinkedIn
 				</Social>
 				<Social href="https://github.com/reyesfr24">
-					<GitHub class="w-6 h-6" />
+					<GitHub class="size-6" />
 					GitHub
 				</Social>
+				<Social href="https://github.com/reyesfr24">
+					<Mail class="size-6" />
+					franciscoreyesluna@gmail.com
+				</Social>
 			</nav>
-		</section>
+		</SectionContainer>
+
+		<SectionContainer>
+			<Experience />
+		</SectionContainer>
 	</main>
 </Layout>
 
