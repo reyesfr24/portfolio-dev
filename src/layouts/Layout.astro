@@ -21,7 +21,8 @@ const { description,title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<!-- Reemplazado "w-scren" por "w-full en el div para que no se desborde horizontalmente el body" -->
+	<!-- Reemplazado "w-scren" por "w-full en el div para que no se desborde horizontalmente el body"
+	 !!!!!!!!!!!!!!!!mirar que esto no rompa el reponsive -->
 	<body class="bg-neutral-950">
 		<div class="absolute top-0 z-[-2] h-screen w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]"></div>
 		<Header />
