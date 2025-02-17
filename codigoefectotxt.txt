@@ -1,0 +1,21 @@
+<!-- <h1 class="flex flex-row gap-x-4 pb-10">
+				<SplitText
+					text="¡Hola, soy Fran!"
+					className="text-white text-3xl lg:text-5xl font-bold flex flex-row leading-[1.2]"
+					delay={150}
+					animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
+					animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
+					easing="easeOutCubic"
+					threshold={0.2}
+					rootMargin="-50px"
+					client:load
+				/>
+				<a 
+					href="https://www.linkedin.com/in/francisco-reyes-11a887172/"
+					target="_blank"
+					rel="nooperner"
+					class="flex justify-center items-center"
+				>
+					<Badge>Disponible para trabajar</Badge>
+				</a>
+			</h1> -->

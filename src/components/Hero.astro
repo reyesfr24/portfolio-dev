@@ -1,0 +1,53 @@
+---
+import Badge from '../components/Badge.astro';
+import Social from '../components/Social.astro'
+import LinkedIn from '../icons/LinkedIn.astro'
+import GitHub from '../icons/GitHub.astro'
+import Mail from '../icons/Mail.astro'
+import SplitText from '../components/SplitText.jsx';
+---
+<!-- <div class="max-w-xl">
+    <div class="flex gap-4 mb-4"> -->
+        <img
+				class="rounded-full size-12 mb-4"
+				src="/profile.webp"
+				alt="profile photo"
+			/>
+			<h1 class="text-gray-800 text-3xl lg:text-5xl font-bold  flex flex-row gap-x-4 pb-6 lg:pb-10 dark:text-white">
+				¡Hola, soy Francisco! <a 
+					href="/cv.pdf"
+					target="_blank"
+					rel="nooperner"
+					class="flex justify-center items-center"
+				>
+					<Badge>Currículum PDF</Badge>
+				</a>
+			</h1>
+		
+		<p class="text-s lg:text-2xl text-gray-800 dark:[&>strong]:text-yellow-200 [&>strong]:text-yellow-500 [&>strong]:font-semibold dark:text-gray-300 text-justify"
+        >
+			<strong>Programador web</strong>
+			<span class="opacity-80"> apasionado por el desarrollo y la tecnología. Disfruto
+			con mi trabajo y me impulsa cada día a aprender más para crecer tanto
+			personal como profesionalmente. Estoy en constante formación, mejorando
+			mis habilidades y conocimientos para así adaptarme con facilidad a nuevos
+			proyectos y tecnologías. Me gusta trabajar en equipo para lograr mejores
+			resultados y avanzar profesionalmente.
+			</span>
+		</p>
+
+			<nav class="flex gap-4 mt-8 flex-wrap justify-center md:justify-start">
+				<Social href="https://www.linkedin.com/in/francisco-reyes-11a887172/">
+					<LinkedIn class="size-4" />
+					LinkedIn
+				</Social>
+				<Social href="https://github.com/reyesfr24">
+					<GitHub class="size-4" />
+					GitHub
+				</Social>
+				<Social href="mailto:franciscoreyesluna@gmail.com">
+					<Mail class="size-4" />
+					franciscoreyesluna@gmail.com
+				</Social>
+			</nav>
+<!-- </div> -->

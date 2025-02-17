@@ -1,14 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Badge from '../components/Badge.astro';
-import Social from '../components/Social.astro'
+
 import Experience from '../components/Experience.astro'
 import SectionContainer from '../components/SectionContainer.astro'
-import LinkedIn from '../icons/LinkedIn.astro'
-import GitHub from '../icons/GitHub.astro'
-import Mail from '../icons/Mail.astro'
+import Hero from '../components/Hero.astro'
 import BriefCase from '../icons/BriefCase.astro'
-import SplitText from '../components/SplitText.jsx';
+
 ---
 
 <Layout 
@@ -17,69 +14,11 @@ import SplitText from '../components/SplitText.jsx';
 >
 	<main class="px-4">
 		<SectionContainer class="py-24 pb-24">
-			<img
-				class="rounded-full size-12 mb-4"
-				src="/profile.webp"
-				alt="profile photo"
-			/>
-			<h1 class="text-white text-3xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10">
-				¡Hola, soy Francisco! <a 
-					href="/cv.pdf"
-					target="_blank"
-					rel="nooperner"
-					class="flex justify-center items-center"
-				>
-					<Badge>Ver Currículum PDF</Badge>
-				</a>
-			</h1>
-			<!-- <h1 class="flex flex-row gap-x-4 pb-10">
-				<SplitText
-					text="¡Hola, soy Fran!"
-					className="text-white text-3xl lg:text-5xl font-bold flex flex-row leading-[1.2]"
-					delay={150}
-					animationFrom={{ opacity: 0, transform: 'translate3d(0,50px,0)' }}
-					animationTo={{ opacity: 1, transform: 'translate3d(0,0,0)' }}
-					easing="easeOutCubic"
-					threshold={0.2}
-					rootMargin="-50px"
-					client:load
-				/>
-				<a 
-					href="https://www.linkedin.com/in/francisco-reyes-11a887172/"
-					target="_blank"
-					rel="nooperner"
-					class="flex justify-center items-center"
-				>
-					<Badge>Disponible para trabajar</Badge>
-				</a>
-			</h1> -->
-			<h2 class="text-s lg:text-2xl text-wrap max-w-[700px]">
-				<span class="text-yellow-200/90">Programador web</span>
-				<span class="opacity-80"> apasionado por el desarrollo y la tecnología. Disfruto
-				con mi trabajo y me impulsa cada día a aprender más para crecer tanto
-				personal como profesionalmente. Estoy en constante formación, mejorando
-				mis habilidades y conocimientos para así adaptarme con facilidad a nuevos
-				proyectos y tecnologías. Me gusta trabajar en equipo para lograr mejores
-				resultados y avanzar profesionalmente.
-				</span>
-			</h2>
-
-			<nav class="flex gap-4 mt-8 flex-wrap">
-				<Social href="https://www.linkedin.com/in/francisco-reyes-11a887172/">
-					<LinkedIn class="size-4 lg:size-6" />
-					LinkedIn
-				</Social>
-				<Social href="https://github.com/reyesfr24">
-					<GitHub class="size-4 lg:size-6" />
-					GitHub
-				</Social>
-				<Social href="mailto:franciscoreyesluna@gmail.com">
-					<Mail class="size-4 md:size-6" />
-					franciscoreyesluna@gmail.com
-				</Social>
-			</nav>
+			<Hero>
+				<slot />
+			</Hero>
 		</SectionContainer>
-
+		<div class="space-y-24"></div>
 		<SectionContainer id="experiencia">
 			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
 				<BriefCase class="size-8"/>
