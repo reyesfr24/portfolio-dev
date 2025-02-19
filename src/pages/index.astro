@@ -3,14 +3,16 @@ import Layout from '../layouts/Layout.astro';
 
 import Experience from '../components/Experience.astro'
 import SectionContainer from '../components/SectionContainer.astro'
+import AboutMe from '../components/AboutMe.astro'
 import Hero from '../components/Hero.astro'
 import BriefCase from '../icons/BriefCase.astro'
+import ProfileCheck from '../icons/ProfileCheck.astro'
 
 ---
 
 <Layout 
-	title="Portfolio Francisco Reyes Luna | Programador web"
-	description="Desarrollador web apasionado por el desarrollo y la tecnología"
+	title="Porfolio Francisco Reyes Luna | Programador web"
+	description="Desarrollador web enfocado en crear experiencias web útiles y agradables para los usuarios."
 >
 	<main class="px-4">
 		<SectionContainer class="py-24 pb-24">
@@ -25,6 +27,13 @@ import BriefCase from '../icons/BriefCase.astro'
 				Experiencia laboral
 			</h2>
 			<Experience />
+		</SectionContainer>
+		<SectionContainer id="sobre-mi">
+			<h2 class="text-2xl text-gray-800 dark:text-white font-semibold mb-6 flex gap-x-3 items-center">
+				<ProfileCheck class="size-8" />
+        		Sobre mí
+			</h2>
+			<AboutMe />
 		</SectionContainer>
 	</main>
 </Layout>
